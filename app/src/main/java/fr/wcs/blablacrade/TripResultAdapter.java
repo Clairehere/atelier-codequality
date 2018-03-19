@@ -13,12 +13,11 @@ import java.util.ArrayList;
  * Created by wilder on 13/09/17.
  */
 
-// This is the adapter lol
 public class TripResultAdapter extends BaseAdapter {
-    private Context context; //context
-    private ArrayList<TripResultModel> items; //data source of the list adapter
+    private Context context;
+    private ArrayList<TripResultModel> items;
 
-    //public constructor 
+
     public TripResultAdapter(Context context, ArrayList<TripResultModel> items) {
         this.context = context;
         this.items = items;
@@ -26,7 +25,7 @@ public class TripResultAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return items.size(); //returns total of items in the list
+        return items.size();
     }
 
     @Override
@@ -52,16 +51,16 @@ public class TripResultAdapter extends BaseAdapter {
 
         // get the TextView for item name and item description
         TextView departure = (TextView)
-                convertView.findViewById(R.id.texteresu1);
+                convertView.findViewById(R.id.tv_departure);
         TextView firstname = (TextView)
-                convertView.findViewById(R.id.textres2);
+                convertView.findViewById(R.id.tv_firstname);
         TextView price = (TextView)
-                convertView.findViewById(R.id.txt);
+                convertView.findViewById(R.id.tv_price);
 
         //sets the text for item name and item description from the current item object
         departure.setText(currentItem.getDepare().toString());
-        firstname.setText(currentItem.getPrénom());
-        price.setText(String.valueOf(currentItem.getPri()));
+        firstname.setText(currentItem.getName());
+        price.setText(String.valueOf(currentItem.getPrice()));
 
         // returns the view for the current row
         return convertView;

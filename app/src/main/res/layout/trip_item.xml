@@ -5,22 +5,22 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/texteresu1"
+        android:id="@+id/tv_departure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
         tools:text="Departure" />
 
     <TextView
-        android:id="@+id/textres2"
+        android:id="@+id/tv_firstname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/texteresu1"
+        android:layout_below="@+id/tv_departure"
         android:padding="10dp"
         tools:text="Firstname" />
 
     <TextView
-        android:id="@+id/txt"
+        android:id="@+id/tv_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
